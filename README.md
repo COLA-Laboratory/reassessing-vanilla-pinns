@@ -28,13 +28,3 @@ The `Data/` directory provides the full hyperparameter search results from the p
 - **`Data/HPO/`** — 48-configuration search results on all 14 PDEs for three methods (672 runs per file): `proposed.csv` (vanilla PINN with Adam $\beta_2=0.9$ + L-BFGS), `default.csv` (vanilla PINN with Adam $\beta_2=0.999$ + L-BFGS), and `spformer.csv` (S-Pformer with its source L-BFGS 1000 pipeline). Used for the Section 6 HPO results.
 
 Each CSV includes per-run hyperparameters, final rRMSE, and training time. See column headers for field details.
-
-## Citation
-
-```bibtex
-@article{reassessing_vanilla_pinns,
-  title={Reassessing Vanilla PINNs: Hyperparameters, Optimization Robustness, and Stronger Baselines},
-  author={},
-  year={2026}
-}
-```
