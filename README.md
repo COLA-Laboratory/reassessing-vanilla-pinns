@@ -1,8 +1,6 @@
 # Reassessing Vanilla PINNs
 
-Code repository for the paper:
-
-**Reassessing Vanilla PINNs: Hyperparameters, Optimization Robustness, and Stronger Baselines**
+We show that a well-tuned vanilla PINN (MLP) with a two-stage Adam ($\beta_2 = 0.9$) + L-BFGS pipeline is a substantially stronger baseline on benchmark PDEs than commonly reported. This repository provides 14 reproducible demos and the full hyperparameter search data behind the paper.
 
 ## Installation
 
