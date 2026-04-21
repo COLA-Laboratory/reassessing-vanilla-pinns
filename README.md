@@ -2,9 +2,9 @@
 
 We show that a well-tuned vanilla PINN (MLP) combined with our proposed training pipeline is a substantially stronger baseline on benchmark PDEs than commonly reported. This repository provides 14 reproducible demos and the full hyperparameter search data behind the paper.
 
-![Training animation for Convection (beta=100)](assets/conv100_training.gif)
+Convection (β=100) is often cited as a vanilla PINN failure mode. The animation below shows our proposed pipeline solving it live: Adam (β₂=0.9) escapes the partial-loss attractor near step 60k; L-BFGS then drives rRMSE from about 0.7 down to about 8×10⁻⁴.
 
-Live training of a vanilla PINN on Convection (β=100) under the proposed pipeline. Adam (β₂=0.9) escapes the partial-loss attractor near step 60k; L-BFGS then drives rRMSE from about 0.7 down to about 8×10⁻⁴.
+![Training animation for Convection (beta=100)](assets/conv100_training.gif)
 
 ## 📦 Installation
 
