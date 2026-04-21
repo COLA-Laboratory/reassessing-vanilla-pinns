@@ -16,7 +16,7 @@ Requires PyTorch >= 2.0 with CUDA support (CPU also works but is slower).
 
 ## Demos
 
-The `demos/` directory contains 14 self-contained scripts (`demo01_*.py` through `demo14_*.py`), each reproducing the best vanilla PINN (MLP) result for one PDE under the proposed two-phase training pipeline: Adam ($\beta_2 = 0.9$, 80,000 epochs) followed by L-BFGS (200 iterations). Each demo uses `seed=42` and a $100 \times 100$ collocation grid, trains with the best hyperparameters identified by the 48-configuration search in the paper, and saves a `.pkl` (training history + model weights) and a `.png` field plot under `demos/Results/`.
+The `demos/` directory contains 14 self-contained scripts (`demo01_*.py` through `demo14_*.py`), each reproducing the best vanilla PINN (MLP) result for one PDE under the proposed two-phase training pipeline: Adam ($\beta_2 = 0.9$, 80,000 epochs) followed by L-BFGS (200 iterations). Each demo uses a $100 \times 100$ collocation grid, trains with the best hyperparameters identified by the 48-configuration search in the paper, and saves a `.pkl` (training history + model weights) and a `.png` field plot under `demos/Results/`.
 
 Demos 01-08 cover the eight benchmark PDEs (Convection, Reaction, Diffusion, Wave, Burgers, Klein-Gordon, Allen-Cahn, Helmholtz). Demos 09-14 cover the six harder PDEs (Convection $\beta=50, 100$; Reaction $\rho=6$; Wave $m=4$; Helmholtz $n=3$; 2D Navier-Stokes).
 
