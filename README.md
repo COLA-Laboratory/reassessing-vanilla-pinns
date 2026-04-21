@@ -6,7 +6,7 @@ We show that a well-tuned vanilla PINN (MLP) combined with our proposed training
 
 Live training of a vanilla PINN on Convection (β=100) under the proposed pipeline. Adam (β₂=0.9) escapes the partial-loss attractor near step 60k; L-BFGS then drives rRMSE from about 0.7 down to about 8×10⁻⁴.
 
-## Installation
+## 📦 Installation
 
 ```bash
 pip install -r requirements.txt
@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 Requires PyTorch >= 2.0 with CUDA support (CPU also works but is slower).
 
-## Demos
+## 🚀 Demos
 
 The `demos/` directory contains 14 self-contained scripts (`demo01_*.py` through `demo14_*.py`), each reproducing the best vanilla PINN (MLP) result for one PDE under the proposed two-phase training pipeline: Adam ($\beta_2 = 0.9$, 80,000 epochs) followed by L-BFGS (200 iterations). Each demo uses a $100 \times 100$ collocation grid, trains with the best hyperparameters identified by the 48-configuration search in the paper, and saves a `.pkl` (training history + model weights) and a `.png` field plot under `demos/Results/`.
 
@@ -24,7 +24,7 @@ Demos 01-08 cover the eight benchmark PDEs (Convection, Reaction, Diffusion, Wav
 python demos/demo10_conv100.py
 ```
 
-## Data
+## 📊 Data
 
 The `data/` directory provides the full hyperparameter search results from the paper.
 
