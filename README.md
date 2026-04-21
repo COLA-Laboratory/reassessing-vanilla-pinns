@@ -2,6 +2,10 @@
 
 We show that a well-tuned vanilla PINN (MLP) with a two-stage Adam ($\beta_2 = 0.9$) + L-BFGS pipeline is a substantially stronger baseline on benchmark PDEs than commonly reported. This repository provides 14 reproducible demos and the full hyperparameter search data behind the paper.
 
+![Training animation for Convection (beta=100)](assets/conv100_training.gif)
+
+*Live training of a vanilla PINN on Convection ($\beta = 100$) under the proposed pipeline. Adam ($\beta_2 = 0.9$) escapes the partial-loss attractor near step 60k; L-BFGS then drives rRMSE from $\sim\!0.7$ down to $\sim\!8\!\times\!10^{-4}$.*
+
 ## Installation
 
 ```bash
