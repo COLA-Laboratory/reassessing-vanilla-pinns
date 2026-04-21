@@ -1,0 +1,21 @@
+"""PDE6: Klein-Gordon — u_tt - u_xx + u^2 + source = 0
+Best 48-grid config: d=2, w=10, sin, lr=0.05
+"""
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+import torch
+from src.model import create_model
+from src.pdes import KleinGordon
+from src.trainer import set_seed, train, save_results
+from src.utils import plot_field
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+set_seed(42)
+
+pde = KleinGordon(device=device)
+model = create_model(depth=2, width=10, activation='sin', device=device)
+model, results = train(model, pde, lr=0.05, device=device)
+results.update(pde='pde6_klein_gordon', depth=2, width=10, activation='sin')
+save_results(results, 'pde6_klein_gordon')
+plot_field(pde, model, 'pde6_klein_gordon', device=device)
