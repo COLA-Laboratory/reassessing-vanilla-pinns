@@ -26,9 +26,9 @@ python demos/demo10_conv100.py
 
 ## Data
 
-The `Data/` directory provides the full hyperparameter search results from the paper.
+The `data/` directory provides the full hyperparameter search results from the paper.
 
-- **`Data/LHS/`** — 2,000 Latin Hypercube Samples per PDE across 8 benchmarks (16,000 runs total), used for the Section 4 hyperparameter importance analysis.
-- **`Data/HPO/`** — 48-configuration search results on all 14 PDEs for three methods (672 runs per file): `proposed.csv` (vanilla PINN with Adam $\beta_2=0.9$ + L-BFGS), `default.csv` (vanilla PINN with Adam $\beta_2=0.999$ + L-BFGS), and `spformer.csv` (S-Pformer with its source L-BFGS 1000 pipeline). Used for the Section 6 HPO results.
+- **`data/LHS/`** — 2,000 Latin Hypercube Samples per PDE across 8 benchmarks (16,000 runs total), used for the Section 4 hyperparameter importance analysis.
+- **`data/HPO/`** — 48-configuration search results on all 14 PDEs for three methods (672 runs per file): `proposed.csv` (vanilla PINN with Adam $\beta_2=0.9$ + L-BFGS), `default.csv` (vanilla PINN with Adam $\beta_2=0.999$ + L-BFGS), and `spformer.csv` (S-Pformer with its source L-BFGS 1000 pipeline). Used for the Section 6 HPO results.
 
 Each CSV includes per-run hyperparameters, final rRMSE, and training time. See column headers for field details.
