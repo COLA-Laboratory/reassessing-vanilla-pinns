@@ -20,6 +20,8 @@ The `demos/` directory contains 14 self-contained scripts (`demo01_*.py` through
 
 Demos 01-08 cover the eight benchmark PDEs (Convection, Reaction, Diffusion, Wave, Burgers, Klein-Gordon, Allen-Cahn, Helmholtz). Demos 09-14 cover the six harder PDEs (Convection $\beta=50, 100$; Reaction $\rho=6$; Wave $m=4$; Helmholtz $n=3$; 2D Navier-Stokes).
 
+For example, to reproduce the Convection ($\beta=100$) result shown in the animation above:
+
 ```bash
 python demos/demo10_conv100.py
 ```
